@@ -11,7 +11,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/50" />
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          // src="/placeholder.svg?height=1080&width=1920"
+          src="/hero2.jpg"
           alt="Mansur Group Hero Background"
           fill
           className="object-cover"
@@ -51,7 +52,7 @@ export default function HeroSection() {
             <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white">
               Explore Our Services
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white text-gray-600 hover:text-white hover:bg-white/10">
               Contact Us
             </Button>
           </motion.div>
