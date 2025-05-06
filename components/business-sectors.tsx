@@ -40,7 +40,7 @@ export default function BusinessSectors() {
       description:
         "Building the future with innovative construction solutions, from residential developments to commercial complexes and infrastructure projects.",
       icon: <Building2 className="h-12 w-12 text-amber-500" />,
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/construction.jpg",
       link: "#construction",
     },
     {
@@ -49,7 +49,7 @@ export default function BusinessSectors() {
       description:
         "Crafting unforgettable experiences through our tourism services, showcasing the best destinations with expert guides and personalized itineraries.",
       icon: <Plane className="h-12 w-12 text-amber-500" />,
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/istanbul.webp",
       link: "#tourism",
     },
     {
@@ -58,7 +58,7 @@ export default function BusinessSectors() {
       description:
         "Delivering exceptional hospitality through our premium hotel properties, where comfort meets luxury and every guest feels special.",
       icon: <Hotel className="h-12 w-12 text-amber-500" />,
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/ihthotel.jpg",
       link: "#hospitality",
     },
   ]

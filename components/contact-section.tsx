@@ -103,9 +103,9 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-medium">Address</h4>
                       <p className="text-gray-600 mt-1">
-                        123 Business Avenue, <br />
-                        Corporate District, <br />
-                        City, Country
+                        Toshkent shahar, <br />
+                        Yakkasaroy tumani, <br />
+                        Bobur ko'chasi 34
                       </p>
                     </div>
                   </div>
@@ -114,8 +114,8 @@ export default function ContactSection() {
                     <Phone className="h-5 w-5 text-amber-500 mt-1 mr-3" />
                     <div>
                       <h4 className="font-medium">Phone</h4>
-                      <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
-                      <p className="text-gray-600">+1 (555) 987-6543</p>
+                      <p className="text-gray-600 mt-1">+998 (90) 176 62 50</p>
+                      <p className="text-gray-600">+998 (95) 177 92 52</p>
                     </div>
                   </div>
 
@@ -123,8 +123,8 @@ export default function ContactSection() {
                     <Mail className="h-5 w-5 text-amber-500 mt-1 mr-3" />
                     <div>
                       <h4 className="font-medium">Email</h4>
-                      <p className="text-gray-600 mt-1">info@mansurgroup.com</p>
-                      <p className="text-gray-600">contact@mansurgroup.com</p>
+                      <p className="text-gray-600 mt-1">info@mansurgroup.uz</p>
+                      {/* <p className="text-gray-600">contact@mansurgroup.com</p> */}
                     </div>
                   </div>
                 </div>
@@ -132,8 +132,8 @@ export default function ContactSection() {
                 <div className="pt-4">
                   <h4 className="font-medium mb-3">Business Hours</h4>
                   <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
-                  <p className="text-gray-600">Sunday: Closed</p>
+                  {/* <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p> */}
+                  {/* <p className="text-gray-600">Sunday: Closed</p> */}
                 </div>
               </CardContent>
             </Card>
