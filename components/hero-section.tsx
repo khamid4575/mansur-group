@@ -19,7 +19,7 @@ export default function HeroSection() {
           src="/bobur34.jpg"
           alt="Mansur Group Hero Background"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
         />
       </div>
@@ -73,7 +73,7 @@ export default function HeroSection() {
             <Link href={"#sectors"}>
               <Button
                 size="lg"
-                className="bg-amber-500 hover:bg-amber-600 text-white"
+                className="w-36 bg-amber-500 hover:bg-amber-600 text-white"
               >
                 {/* Explore Our Services */}
                 Xizmatlarimiz
@@ -83,7 +83,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-gray-600 hover:text-white hover:bg-white/10"
+                className="w-36 border-white text-gray-600 hover:text-white hover:bg-white/10"
               >
                 {/* Contact Us */}
                 Bog'lanish
@@ -94,7 +94,7 @@ export default function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 inset-x-1/2"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
