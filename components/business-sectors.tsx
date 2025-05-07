@@ -86,10 +86,10 @@ export default function BusinessSectors() {
       link: "https://shoshfinance.uz/",
     },
     {
-      id: "supply-partners",
-      title: "Supply Partners",
+      id: "hotel-suply",
+      title: "Hotel Supply",
       description:
-        "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Supply Partners sizning biznesingizning barqaror tayanchi.",
+        "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi.",
       icon: <Handshake className="h-12 w-12 text-amber-500" />,
       image: "/supply.webp",
       link: "https://supplypartners.uz/",
