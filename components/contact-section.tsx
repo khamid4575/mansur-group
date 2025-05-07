@@ -38,10 +38,14 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            {/* Contact Us */}
+            Bog'lanish
+            </h2>
           <div className="w-20 h-1 bg-amber-500 mx-auto mb-8" />
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Get in touch with our team to learn more about our services or to discuss your next project.
+            {/* Get in touch with our team to learn more about our services or to discuss your next project. */}
+            Xizmatlarimiz haqida batafsil ma’lumot olish yoki navbatdagi loyihangizni muhokama qilish uchun biz bilan bog‘laning.
           </p>
         </motion.div>
 
@@ -58,13 +62,15 @@ export default function ContactSection() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
-                        Full Name
+                        {/* Full Name */}
+                        Ismingiz
                       </label>
                       <Input id="name" placeholder="Your name" />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium">
-                        Email Address
+                        {/* Email Address */}
+                        Email pochta
                       </label>
                       <Input id="email" type="email" placeholder="Your email" />
                     </div>
@@ -72,20 +78,23 @@ export default function ContactSection() {
 
                   <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-medium">
-                      Subject
+                      {/* Subject */}
+                      Mavzu
                     </label>
                     <Input id="subject" placeholder="How can we help you?" />
                   </div>
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">
-                      Message
+                      {/* Message */}
+                      Xabar
                     </label>
                     <Textarea id="message" placeholder="Your message" rows={5} />
                   </div>
 
                   <Button type="submit" className="w-full bg-amber-500 hover:bg-amber-600 text-white">
-                    Send Message
+                    {/* Send Message */}
+                    Yuborish
                   </Button>
                 </form>
               </CardContent>
@@ -95,13 +104,19 @@ export default function ContactSection() {
           <motion.div variants={itemVariants}>
             <Card>
               <CardContent className="p-6 space-y-8">
-                <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  {/* Contact Information */}
+                  Bog'lanish uchun
+                  </h3>
 
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 text-amber-500 mt-1 mr-3" />
                     <div>
-                      <h4 className="font-medium">Address</h4>
+                      <h4 className="font-medium">
+                        {/* Address */}
+                        Manzil
+                        </h4>
                       <p className="text-gray-600 mt-1">
                         Toshkent shahar, <br />
                         Yakkasaroy tumani, <br />
@@ -113,7 +128,7 @@ export default function ContactSection() {
                   <div className="flex items-start">
                     <Phone className="h-5 w-5 text-amber-500 mt-1 mr-3" />
                     <div>
-                      <h4 className="font-medium">Phone</h4>
+                      <h4 className="font-medium">Telefon</h4>
                       <p className="text-gray-600 mt-1">+998 (90) 176 62 50</p>
                       <p className="text-gray-600">+998 (95) 177 92 52</p>
                     </div>
@@ -130,8 +145,14 @@ export default function ContactSection() {
                 </div>
 
                 <div className="pt-4">
-                  <h4 className="font-medium mb-3">Business Hours</h4>
-                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <h4 className="font-medium mb-3">
+                    {/* Business Hours */}
+                    Ish vaqti
+                    </h4>
+                  <p className="text-gray-600">
+                    {/* Monday - Friday: 9:00 AM - 6:00 PM */}
+                    Dushanba - Juma: 9:00 - 18:00
+                    </p>
                   {/* <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p> */}
                   {/* <p className="text-gray-600">Sunday: Closed</p> */}
                 </div>

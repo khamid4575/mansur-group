@@ -60,7 +60,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Excellence in Construction, Tourism, and Hospitality
+            {/* Excellence in Construction, Tourism, and Hospitality */}
+            Qurilish, turizm va mehmondo'stlik sohasida eng yetakchi
           </motion.p>
 
           <motion.div
@@ -74,7 +75,8 @@ export default function HeroSection() {
                 size="lg"
                 className="bg-amber-500 hover:bg-amber-600 text-white"
               >
-                Explore Our Services
+                {/* Explore Our Services */}
+                Xizmatlarimiz
               </Button>
             </Link>
             <Link href={"#contact"}>
@@ -83,7 +85,8 @@ export default function HeroSection() {
                 variant="outline"
                 className="border-white text-gray-600 hover:text-white hover:bg-white/10"
               >
-                Contact Us
+                {/* Contact Us */}
+                Bog'lanish
               </Button>
             </Link>
           </motion.div>
