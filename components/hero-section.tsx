@@ -61,7 +61,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             {/* Excellence in Construction, Tourism, and Hospitality */}
-            Qurilish, turizm va mehmondo'stlik sohasida eng yetakchi
+            {t("hero.description")}
           </motion.p>
 
           <motion.div
@@ -73,20 +73,20 @@ export default function HeroSection() {
             <Link href={"#sectors"}>
               <Button
                 size="lg"
-                className="w-36 bg-amber-500 hover:bg-amber-600 text-white"
+                className="w-36 bg-amber-500 hover:bg-amber-600 text-white lg:text-lg"
               >
                 {/* Explore Our Services */}
-                Xizmatlarimiz
+                {t("hero.ourServices")}
               </Button>
             </Link>
             <Link href={"#contact"}>
               <Button
                 size="lg"
                 variant="outline"
-                className="w-36 border-white text-gray-600 hover:text-white hover:bg-white/10"
+                className="w-36 border-white text-gray-600 hover:text-white hover:bg-white/10 lg:text-lg"
               >
                 {/* Contact Us */}
-                Bog'lanish
+                {t("hero.contactUs")}
               </Button>
             </Link>
           </motion.div>

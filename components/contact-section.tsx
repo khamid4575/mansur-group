@@ -9,8 +9,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
+import { useTranslations } from "next-intl"
 
 export default function ContactSection() {
+  const t = useTranslations("")
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
@@ -40,12 +42,12 @@ export default function ContactSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             {/* Contact Us */}
-            Bog'lanish
+            {t("contactUs.title")}
             </h2>
           <div className="w-20 h-1 bg-amber-500 mx-auto mb-8" />
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             {/* Get in touch with our team to learn more about our services or to discuss your next project. */}
-            Xizmatlarimiz haqida batafsil ma’lumot olish yoki navbatdagi loyihangizni muhokama qilish uchun biz bilan bog‘laning.
+            {t("contactUs.description")}
           </p>
         </motion.div>
 
@@ -63,38 +65,38 @@ export default function ContactSection() {
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
                         {/* Full Name */}
-                        Ismingiz
+                        {t("contactUs.name")}
                       </label>
-                      <Input id="name" placeholder="Your name" />
+                      <Input id="name" placeholder={t("contactUs.name")} />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium">
                         {/* Email Address */}
-                        Email pochta
+                        Email
                       </label>
-                      <Input id="email" type="email" placeholder="Your email" />
+                      <Input id="email" type="email" placeholder="Email" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-medium">
                       {/* Subject */}
-                      Mavzu
+                      {t("contactUs.subject")}
                     </label>
-                    <Input id="subject" placeholder="How can we help you?" />
+                    <Input id="subject" placeholder={t("contactUs.subject")} />
                   </div>
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">
                       {/* Message */}
-                      Xabar
+                      {t("contactUs.message")}
                     </label>
-                    <Textarea id="message" placeholder="Your message" rows={5} />
+                    <Textarea id="message" placeholder={t("contactUs.message")} rows={5} />
                   </div>
 
                   <Button type="submit" className="w-full bg-amber-500 hover:bg-amber-600 text-white">
                     {/* Send Message */}
-                    Yuborish
+                    {t("contactUs.sendMessage")}
                   </Button>
                 </form>
               </CardContent>
@@ -106,7 +108,7 @@ export default function ContactSection() {
               <CardContent className="p-6 space-y-8">
                 <h3 className="text-xl font-semibold mb-4">
                   {/* Contact Information */}
-                  Bog'lanish uchun
+                  {t("contactUs.toContact")}
                   </h3>
 
                 <div className="space-y-6">
@@ -115,12 +117,11 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-medium">
                         {/* Address */}
-                        Manzil
-                        </h4>
+                        {t("contactUs.addressTitle")}
+                      </h4>
                       <p className="text-gray-600 mt-1">
-                        Toshkent shahar, <br />
-                        Yakkasaroy tumani, <br />
-                        Bobur ko'chasi 34
+                        {/* Tashkent, Yunusabad District, Bobur Street, 34 */}
+                        {t("contactUs.address")}
                       </p>
                     </div>
                   </div>
@@ -128,7 +129,7 @@ export default function ContactSection() {
                   <div className="flex items-start">
                     <Phone className="h-5 w-5 text-amber-500 mt-1 mr-3" />
                     <div>
-                      <h4 className="font-medium">Telefon</h4>
+                      <h4 className="font-medium">{t("contactUs.phone")}</h4>
                       <p className="text-gray-600 mt-1">+998 (90) 176 62 50</p>
                       <p className="text-gray-600">+998 (95) 177 92 52</p>
                     </div>
@@ -147,12 +148,12 @@ export default function ContactSection() {
                 <div className="pt-4">
                   <h4 className="font-medium mb-3">
                     {/* Business Hours */}
-                    Ish vaqti
-                    </h4>
+                    {t("contactUs.workTime")}
+                  </h4>
                   <p className="text-gray-600">
                     {/* Monday - Friday: 9:00 AM - 6:00 PM */}
-                    Dushanba - Juma: 9:00 - 18:00
-                    </p>
+                    {t("contactUs.workTimeDescription")}
+                  </p>
                   {/* <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p> */}
                   {/* <p className="text-gray-600">Sunday: Closed</p> */}
                 </div>

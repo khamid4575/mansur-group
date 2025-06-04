@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function Footer() {
+  const t = useTranslations()
   const currentYear = new Date().getFullYear()
 
   return (
@@ -15,7 +17,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Mansur Group</h3>
             <p className="text-gray-400 mb-4">
               {/* Excellence in Construction, Tourism, and Hospitality */}
-              Qurilish, turizm va mehmondo'stlik sohasida eng yetakchi
+              {t("hero.description")}
               </p>
             <div className="flex space-x-4">
               <motion.a
@@ -52,31 +54,31 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">
               {/* Quick Links */}
-              Tezkor havolalar
+              {t("footer.quickLinks")}
               </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Home */}
-                  Bosh sahifa
+                  {t("footer.homePage")}
                 </Link>
               </li>
               <li>
                 <Link href="#about" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* About Us */}
-                  Biz haqimizda
+                  {t("about.title")}
                 </Link>
               </li>
               <li>
                 <Link href="#sectors" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Our Sectors */}
-                  Biznes tarmoqlarimiz
+                  {t("footer.ourBusinesses")}
                 </Link>
               </li>
               <li>
                 <Link href="#contact" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Contact */}
-                  Bog'lanish
+                  {t("contactUs.title")}
                 </Link>
               </li>
             </ul>
@@ -85,25 +87,31 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">
               {/* Our Businesses */}
-              Bizneslarimiz
-              </h4>
+              {t("footer.ourBusinesses")}
+            </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#construction" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Construction */}
-                  Qurilish
+                  {t("footer.construction")}
                 </Link>
               </li>
               <li>
                 <Link href="#tourism" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Tourism */}
-                  Turizm
+                  {t("footer.tourism")}
                 </Link>
               </li>
               <li>
                 <Link href="#hospitality" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Hotels & Hospitality */}
-                  Mehmondo'stlik
+                  {t("footer.hospitality")}
+                </Link>
+              </li>
+              <li>
+                <Link href="#finance" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  {/* Finance */}
+                  {t("footer.finance")}
                 </Link>
               </li>
             </ul>
@@ -112,25 +120,25 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">
               {/* Legal */}
-              Huquqiy
-              </h4>
+              {t("footer.legal")}
+            </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Privacy Policy */}
-                  Maxfiylik siyosati
+                  {t("footer.privacyPolicy")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Terms of Service */}
-                  Foydalanish shartlari
+                  {t("footer.termsOfUse")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
                   {/* Cookie Policy */}
-                  Cookie siyosati
+                  {t("footer.cookiePolicy")}
                 </Link>
               </li>
             </ul>
@@ -138,9 +146,24 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Mansur Group. Barcha huquqlar himoyalangan.</p>
+          <p>&copy; {currentYear} Mansur Group. {t("footer.allRightsReserved")}</p>
         </div>
       </div>
     </footer>
   )
 }
+
+    // "footer": {
+    //     "quickLinks": "Tezkor havolalar",
+    //     "homePage": "Bosh sahifa",
+    //     "ourBusinesses": "Bizneslarimiz",
+    //     "construction": "Qurilish",
+    //     "tourism": "Turizm",
+    //     "hospitality": "Mehmondo'stlik",
+    //     "finance": "Moliyaviy xizmatlar",
+    //     "legal": "Huquqiy",
+    //     "privacyPolicy": "Maxfiylik siyosati",
+    //     "termsOfUse": "Foydalanish shartlari",
+    //     "cookiePolicy": "Cookie siyosati",
+    //     "allRightsReserved": "Barcha huquqlar himoyalangan"
+    // }

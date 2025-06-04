@@ -22,8 +22,37 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useTranslations } from "next-intl";
 
 export default function BusinessSectors() {
+    //   "businesses": {
+    //     "title": "Biznes tarmoqlarimiz",
+    //     "charvak": {
+    //         "title": "Travel Advisor",
+    //         "description": "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha."
+    //     },
+    //     "infinitytour": {
+    //         "title": "Infinity Tour",
+    //         "description": "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish."
+    //     },
+    //     "hospitality": {
+    //         "title": "UzHA",
+    //         "description": "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi."
+    //     },
+    //     "finance": {
+    //         "title": "Shosh Finance Advisor",
+    //         "description": "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi."
+    //     },
+    //     "hotelsupply": {
+    //         "title": "Hotel Supply",
+    //         "description": "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi."
+    //     },
+    //     "innovativeConstruction": {
+    //         "title": "Innovatsion Qurilish",
+    //         "description": "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish."
+    //     }
+    // },
+    const t = useTranslations();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
@@ -49,57 +78,48 @@ export default function BusinessSectors() {
   const sectors = [
     {
       id: "charvak",
-      title: "Travel Advisor",
-      description:
-        "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha.",
+      title: t("businesses.charvak.title"),
+      description: t("businesses.charvak.description"),
       icon: <Mountain className="h-12 w-12 text-amber-500" />,
       image: "/pyramids.jpg",
       link: "https://charvak.uz",
     },
     {
       id: "infinity-tour",
-      title: "Infinity Tour",
-      description:
-        // "Crafting unforgettable experiences through our tourism services, showcasing the best destinations with expert guides and personalized itineraries.",
-        "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish.",
+      title: t("businesses.infinitytour.title"),
+      description: t("businesses.infinitytour.description"),
       icon: <Plane className="h-12 w-12 text-amber-500" />,
       image: "/istanbul.webp",
       link: "https://infinitytour.uz",
     },
     {
       id: "hospitality",
-      title: "UzHA",
-      description:
-        // "Delivering exceptional hospitality through our premium hotel properties, where comfort meets luxury and every guest feels special.",
-        "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi.",
+      title: t("businesses.hospitality.title"),
+      description: t("businesses.hospitality.description"),
       icon: <Hotel className="h-12 w-12 text-amber-500" />,
       image: "/ihthotel.jpg",
       link: "https://uzha.uz",
     },
     {
       id: "finance",
-      title: "Shosh Finance Advisor",
-      description:
-        "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi.",
+      title: t("businesses.finance.title"),
+      description: t("businesses.finance.description"),
       icon: <CircleDollarSign className="h-12 w-12 text-amber-500" />,
       image: "/accounting.webp",
       link: "https://shoshfinance.uz/",
     },
     {
       id: "hotel-suply",
-      title: "Hotel Supply",
-      description:
-        "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi.",
+      title: t("businesses.hotelsupply.title"),
+      description: t("businesses.hotelsupply.description"),
       icon: <Handshake className="h-12 w-12 text-amber-500" />,
       image: "/supply.webp",
       link: "https://supplypartners.uz/",
     },
     {
       id: "innovatsion-qurilish",
-      title: "Innovatsion Qurilish",
-      description:
-        // "Building the future with innovative construction solutions, from residential developments to commercial complexes and infrastructure projects.",
-        "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish.",
+      title: t("businesses.innovativeConstruction.title"),
+      description: t("businesses.innovativeConstruction.description"),
       icon: <Building2 className="h-12 w-12 text-amber-500" />,
       image: "/construction.jpg",
       link: "#construction",
@@ -117,7 +137,7 @@ export default function BusinessSectors() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             {/* Our Business Sectors */}
-            Biznes tarmoqlarimiz
+            { t("businesses.title") }
           </h2>
           <div className="w-20 h-1 bg-amber-500 mx-auto mb-8" />
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
