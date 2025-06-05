@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Building2,
@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -25,36 +24,12 @@ import {
 import { useTranslations } from "next-intl";
 
 export default function BusinessSectors() {
-  //   "businesses": {
-  //     "title": "Biznes tarmoqlarimiz",
-  //     "charvak": {
-  //         "title": "Travel Advisor",
-  //         "description": "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha."
-  //     },
-  //     "infinitytour": {
-  //         "title": "Infinity Tour",
-  //         "description": "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish."
-  //     },
-  //     "hospitality": {
-  //         "title": "UzHA",
-  //         "description": "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi."
-  //     },
-  //     "finance": {
-  //         "title": "Shosh Finance Advisor",
-  //         "description": "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi."
-  //     },
-  //     "hotelsupply": {
-  //         "title": "Hotel Supply",
-  //         "description": "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi."
-  //     },
-  //     "innovativeConstruction": {
-  //         "title": "Innovatsion Qurilish",
-  //         "description": "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish."
-  //     }
-  // },
   const t = useTranslations();
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+
+  const upVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -128,10 +103,12 @@ export default function BusinessSectors() {
 
   return (
     <section className="py-20 bg-gray-50" id="sectors">
-      <div className="container mx-auto px-4" ref={ref}>
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={upVariants}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -150,7 +127,8 @@ export default function BusinessSectors() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          whileInView="visible"
+          viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {sectors.map((sector) => (

@@ -265,7 +265,7 @@ export default function AboutSection() {
 
             <motion.div
               variants={fadeIn}
-              custom={6}
+              custom={8}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
