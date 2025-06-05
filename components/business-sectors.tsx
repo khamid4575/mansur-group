@@ -25,34 +25,34 @@ import {
 import { useTranslations } from "next-intl";
 
 export default function BusinessSectors() {
-    //   "businesses": {
-    //     "title": "Biznes tarmoqlarimiz",
-    //     "charvak": {
-    //         "title": "Travel Advisor",
-    //         "description": "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha."
-    //     },
-    //     "infinitytour": {
-    //         "title": "Infinity Tour",
-    //         "description": "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish."
-    //     },
-    //     "hospitality": {
-    //         "title": "UzHA",
-    //         "description": "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi."
-    //     },
-    //     "finance": {
-    //         "title": "Shosh Finance Advisor",
-    //         "description": "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi."
-    //     },
-    //     "hotelsupply": {
-    //         "title": "Hotel Supply",
-    //         "description": "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi."
-    //     },
-    //     "innovativeConstruction": {
-    //         "title": "Innovatsion Qurilish",
-    //         "description": "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish."
-    //     }
-    // },
-    const t = useTranslations();
+  //   "businesses": {
+  //     "title": "Biznes tarmoqlarimiz",
+  //     "charvak": {
+  //         "title": "Travel Advisor",
+  //         "description": "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha."
+  //     },
+  //     "infinitytour": {
+  //         "title": "Infinity Tour",
+  //         "description": "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish."
+  //     },
+  //     "hospitality": {
+  //         "title": "UzHA",
+  //         "description": "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi."
+  //     },
+  //     "finance": {
+  //         "title": "Shosh Finance Advisor",
+  //         "description": "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi."
+  //     },
+  //     "hotelsupply": {
+  //         "title": "Hotel Supply",
+  //         "description": "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi."
+  //     },
+  //     "innovativeConstruction": {
+  //         "title": "Innovatsion Qurilish",
+  //         "description": "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish."
+  //     }
+  // },
+  const t = useTranslations();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
@@ -137,14 +137,13 @@ export default function BusinessSectors() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             {/* Our Business Sectors */}
-            { t("businesses.title") }
+            {t("businesses.title")}
           </h2>
           <div className="w-20 h-1 bg-amber-500 mx-auto mb-8" />
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             {/* Mansur Group operates across multiple industries, bringing
             excellence and innovation to every sector. */}
-            Mansur Group turli sohalarda faoliyat yuritib, har bir sohaga
-            mukammallik va innovatsiyalarni olib keladi.
+            {t("businesses.description")}
           </p>
         </motion.div>
 
@@ -184,8 +183,7 @@ export default function BusinessSectors() {
                 <CardFooter className="pt-0 flex justify-center">
                   <Link href={sector.link}>
                     <Button variant="outline" className="group">
-                      {/* Learn More */}
-                      Batafsil
+                      {t("businesses.learnMore")}
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>

@@ -1,88 +1,89 @@
 {
-    "hero": {
-        "title": "E'tiboringizda",
-        "description": "Qurilish, turizm va mehmondo'stlik sohasida eng yetakchi",
-        "ourServices": "Xizmatlarimiz",
-        "contactUs": "Bog'lanish"
+  "hero": {
+    "title": "E'tiboringizda",
+    "description": "Qurilish, turizm va mehmondo'stlik sohasida eng yetakchi",
+    "ourServices": "Xizmatlarimiz",
+    "contactUs": "Bog'lanish"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "p1": "Mansur Group o'zini ko'plab sohalarda yetakchi sifatida ko'rsatdi. Bizning turli xil portfelimiz qurilish, turizm va mehmondo'stlikni o'z ichiga oladi va har bir sektorda ajoyib sifat va xizmatni taqdim etadi.",
+    "p2": "O'nlab yillik tajribaga ega bo'lgan jamoamiz har bir loyihaga tajriba, innovatsiya va fidoyilikni olib keladi. Biz o'z mijozlarimiz va hamkorlarimiz bilan uzoq muddatli munosabatlar o'rnatish, vaqt sinovidan o'tadigan qiymat yaratishdan faxrlanamiz.",
+    "excellence": "Sifat",
+    "excellenceDescription": "Biz har bir loyihada mukammallikka intilamiz va kutgandan ham yuqori sifatni taqdim etamiz.",
+    "innovation": "Innovatsiya",
+    "innovationDescription": "Biz sohaning eng yangi texnologiyalari va usullarini qo'llab-quvvatlaymiz, bu esa bizga innovatsion yechimlarni taqdim etish imkonini beradi.",
+    "sustainability": "Barqarorlik",
+    "sustainabilityDescription": "Biz barqaror rivojlanishni qo'llab-quvvatlaymiz va ekologik jihatdan toza yechimlarni izlaymiz.",
+    "customerFocus": "Mijozlarga e'tibor",
+    "customerFocusDescription": "Biz mijozlarimizning ehtiyojlarini birinchi o'ringa qo'yamiz va ularga eng yaxshi xizmatni taqdim etishga intilamiz.",
+    "ourLegacy": "Faoliyatimiz",
+    "since": "2007 yildan beri",
+    "ourAchievements": "Bizning yutuqlarimiz",
+    "experience": "yillik tajriba",
+    "projects": "bajarilgan loyihalar",
+    "team": "Jamoa a'zolari",
+    "awards": "Yutuqlar",
+    "ourMission": "Vazifamiz",
+    "ourMissionDescription": "Bizning vazifamiz qurilish, turizm va mehmondo'stlik sohalarida eng yuqori sifatli xizmatlarni taqdim etishdir. Biz mijozlarimizga innovatsion yechimlar va mukammal xizmat ko'rsatishni maqsad qilganmiz.",
+    "ourVision": "Maqsadimiz",
+    "ourVisionDescription": "Barcha manfaatdor tomonlar uchun barqaror qiymat yaratishda innovatsiyalar, sifat va mijozlar ehtiyojini qondirish uchun jahon miqyosida tan olingan sohalarda afzal ko'rilgan tanlov bo'lish."
+  },
+  "businesses": {
+    "title": "Biznes tarmoqlarimiz",
+    "description": "Mansur Group turli sohalarda faoliyat yuritib, har bir sohaga mukammallik va innovatsiyalarni olib keladi.",
+    "learnMore": "Batafsil",
+    "charvak": {
+      "title": "Travel Advisor",
+      "description": "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha."
     },
-    "about": {
-        "title": "Biz haqimizda",
-        "p1": "Mansur Group o'zini ko'plab sohalarda yetakchi sifatida ko'rsatdi. Bizning turli xil portfelimiz qurilish, turizm va mehmondo'stlikni o'z ichiga oladi va har bir sektorda ajoyib sifat va xizmatni taqdim etadi.",
-        "p2": "O'nlab yillik tajribaga ega bo'lgan jamoamiz har bir loyihaga tajriba, innovatsiya va fidoyilikni olib keladi. Biz o'z mijozlarimiz va hamkorlarimiz bilan uzoq muddatli munosabatlar o'rnatish, vaqt sinovidan o'tadigan qiymat yaratishdan faxrlanamiz.",
-        "excellence": "Sifat",
-        "excellenceDescription": "Biz har bir loyihada mukammallikka intilamiz va kutgandan ham yuqori sifatni taqdim etamiz.",
-        "innovation": "Innovatsiya",
-        "innovationDescription": "Biz sohaning eng yangi texnologiyalari va usullarini qo'llab-quvvatlaymiz, bu esa bizga innovatsion yechimlarni taqdim etish imkonini beradi.",
-        "sustainability": "Barqarorlik",
-        "sustainabilityDescription": "Biz barqaror rivojlanishni qo'llab-quvvatlaymiz va ekologik jihatdan toza yechimlarni izlaymiz.",
-        "customerFocus": "Mijozlarga e'tibor",
-        "customerFocusDescription": "Biz mijozlarimizning ehtiyojlarini birinchi o'ringa qo'yamiz va ularga eng yaxshi xizmatni taqdim etishga intilamiz.",
-        "ourLegacy": "Faoliyatimiz",
-        "since": "Biz 2007 yildan beri faoliyat yuritamiz.",
-        "ourAchievements": "Bizning yutuqlarimiz",
-        "experience": "yillik tajriba",
-        "projects": "bajarilgan loyihalar",
-        "team": "Jamoa a'zolari",
-        "awards": "Yutuqlar",
-        "ourMission": "Vazifamiz",
-        "ourMissionDescription": "Bizning vazifamiz qurilish, turizm va mehmondo'stlik sohalarida eng yuqori sifatli xizmatlarni taqdim etishdir. Biz mijozlarimizga innovatsion yechimlar va mukammal xizmat ko'rsatishni maqsad qilganmiz.",
-        "ourVision": "Maqsadimiz",
-        "ourVisionDescription": "Barcha manfaatdor tomonlar uchun barqaror qiymat yaratishda innovatsiyalar, sifat va mijozlar ehtiyojini qondirish uchun jahon miqyosida tan olingan sohalarda afzal ko'rilgan tanlov bo'lish."
+    "infinitytour": {
+      "title": "Infinity Tour",
+      "description": "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish."
     },
-    "businesses": {
-        "title": "Biznes tarmoqlarimiz",
-        "description": "Mansur Group turli sohalarda faoliyat yuritib, har bir sohaga mukammallik va innovatsiyalarni olib keladi.",
-        "charvak": {
-            "title": "Travel Advisor",
-            "description": "Chorvoqdagi eng yaxshi dam olish maskanlarini bir platformada jamlagan keng qamrovli loyiha."
-        },
-        "infinitytour": {
-            "title": "Infinity Tour",
-            "description": "Sayyohlik xizmatlarimiz orqali unutilmas tajribalarni yaratish, eng yaxshi yo'nalishlarni mutaxassis gidlar va shaxsiy marshrutlar bilan namoyish qilish."
-        },
-        "hospitality": {
-            "title": "UzHA",
-            "description": "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi."
-        },
-        "finance": {
-            "title": "Shosh Finance Advisor",
-            "description": "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi."
-        },
-        "hotelsupply": {
-            "title": "Hotel Supply",
-            "description": "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi."
-        },
-        "innovativeConstruction": {
-            "title": "Innovatsion Qurilish",
-            "description": "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish."
-        }
+    "hospitality": {
+      "title": "UzHA",
+      "description": "Mehmonxona va boshqa turar joylar, Restoranlar hamda ularning mahsulot va xizmat ta'minotchilarini birlashtiradi."
     },
-    "contactUs": {
-        "title": "Bog'lanish",
-        "description": "Xizmatlarimiz haqida batafsil ma’lumot olish yoki navbatdagi loyihangizni muhokama qilish uchun biz bilan bog‘laning.",
-        "name": "Ismingiz",
-        "subject": "Mavzu",
-        "message": "Xabaringiz",
-        "sendMessage": "Yuborish",
-        "toContact": "Bog'lanish uchun",
-        "addressTitle": "Manzil",
-        "address": "Toshkent shahar, Yakkasaroy tumani, Bobur ko'chasi 34",
-        "phone": "Telefon",
-        "workTime": "Ish vaqti",
-        "workTimeDescription": "Dushanba - Juma: 9:00 - 18:00"
+    "finance": {
+      "title": "Shosh Finance Advisor",
+      "description": "Buxgalteriya va moliyaviy boshqaruv bilan shug‘ullanuvchi tashkilot. Soliq va moliyaviy xavflardan himoya qiladi. Hujjatlarni tartibga keltiradi."
     },
-    "footer": {
-        "quickLinks": "Tezkor havolalar",
-        "homePage": "Bosh sahifa",
-        "ourBusinesses": "Bizneslarimiz",
-        "construction": "Qurilish",
-        "tourism": "Turizm",
-        "hospitality": "Mehmondo'stlik",
-        "finance": "Moliyaviy xizmatlar",
-        "legal": "Huquqiy",
-        "privacyPolicy": "Maxfiylik siyosati",
-        "termsOfUse": "Foydalanish shartlari",
-        "cookiePolicy": "Cookie siyosati",
-        "allRightsReserved": "Barcha huquqlar himoyalangan"
+    "hotelsupply": {
+      "title": "Hotel Supply",
+      "description": "Mehmonxonalar va restoranlar uchun ishonchli, tez va sifatli ta’minot — Hotel Supply biznesingizning barqaror tayanchi."
+    },
+    "innovativeConstruction": {
+      "title": "Innovatsion Qurilish",
+      "description": "Turar-joylardan tortib savdo majmualari va infratuzilma loyihalarigacha innovatsion qurilish yechimlari bilan kelajakni qurish."
     }
+  },
+  "contactUs": {
+    "title": "Bog'lanish",
+    "description": "Xizmatlarimiz haqida batafsil ma’lumot olish yoki navbatdagi loyihangizni muhokama qilish uchun biz bilan bog‘laning.",
+    "name": "Ismingiz",
+    "subject": "Mavzu",
+    "message": "Xabaringiz",
+    "sendMessage": "Yuborish",
+    "toContact": "Bog'lanish uchun",
+    "addressTitle": "Manzil",
+    "address": "Toshkent shahar, Yakkasaroy tumani, Bobur ko'chasi 34",
+    "phone": "Telefon",
+    "workTime": "Ish vaqti",
+    "workTimeDescription": "Dushanba - Juma: 9:00 - 18:00"
+  },
+  "footer": {
+    "quickLinks": "Tezkor havolalar",
+    "homePage": "Bosh sahifa",
+    "ourBusinesses": "Bizneslarimiz",
+    "construction": "Qurilish",
+    "tourism": "Turizm",
+    "hospitality": "Mehmondo'stlik",
+    "finance": "Moliyaviy xizmatlar",
+    "legal": "Huquqiy",
+    "privacyPolicy": "Maxfiylik siyosati",
+    "termsOfUse": "Foydalanish shartlari",
+    "cookiePolicy": "Cookie siyosati",
+    "allRightsReserved": "Barcha huquqlar himoyalangan"
+  }
 }

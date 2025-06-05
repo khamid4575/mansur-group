@@ -1,89 +1,89 @@
 {
-    "hero": {
-        "title": "Welcome to",
-        "description": "Excellence in Construction, Tourism, and Hospitality",
-        "ourServices": "Our Services",
-        "contactUs": "Contact Us"
+  "hero": {
+    "title": "Welcome to",
+    "description": "Excellence in Construction, Tourism, and Hospitality",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "About Us",
+    "p1": "Mansur Group has established itself as a leader across multiple sectors. Our diverse portfolio includes construction, tourism, and hospitality, delivering exceptional quality and service in each sector.",
+    "p2": "Our team, with decades of experience, brings expertise, innovation, and dedication to every project. We take pride in building long-term relationships with our clients and partners, creating value that stands the test of time.",
+    "excellence": "Excellence",
+    "excellenceDescription": "We strive for excellence in every project, delivering quality that exceeds expectations.",
+    "innovation": "Innovation",
+    "innovationDescription": "We embrace the latest technologies and methods in the industry, enabling us to provide innovative solutions.",
+    "sustainability": "Sustainability",
+    "sustainabilityDescription": "We support sustainable development and seek environmentally friendly solutions.",
+    "customerFocus": "Customer Focus",
+    "customerFocusDescription": "We prioritize our clients' needs and strive to provide them with the best service.",
+    "ourLegacy": "Our Legacy",
+    "since": "since 2007",
+    "ourAchievements": "Our Achievements",
+    "experience": "Years Experience",
+    "projects": "Projects Completed",
+    "team": "Team Members",
+    "awards": "Industry Awards",
+    "ourMission": "Our Mission",
+    "ourMissionDescription": "Our mission is to provide the highest quality services in the fields of construction, tourism, and hospitality. We aim to deliver innovative solutions and exceptional service to our clients.",
+    "ourVision": "Our Vision",
+    "ourVisionDescription": "To be the preferred choice in globally recognized sectors for creating sustainable value for all stakeholders through innovation, quality, and meeting customer needs."
+  },
+  "businesses": {
+    "title": "Our Business Sectors",
+    "description": "Mansur Group operates in various sectors, bringing excellence and innovation to each industry.",
+    "learnMore": "learn more",
+    "charvak": {
+      "title": "Travel Advisor",
+      "description": "A comprehensive project that brings together the best resorts in Charvak on one platform."
     },
-    "about": {
-        "title": "About Us",
-        "p1": "Mansur Group has established itself as a leader across multiple sectors. Our diverse portfolio includes construction, tourism, and hospitality, delivering exceptional quality and service in each sector.",
-        "p2": "Our team, with decades of experience, brings expertise, innovation, and dedication to every project. We take pride in building long-term relationships with our clients and partners, creating value that stands the test of time.",
-        "excellence": "Excellence",
-        "excellenceDescription": "We strive for excellence in every project, delivering quality that exceeds expectations.",
-        "innovation": "Innovation",
-        "innovationDescription": "We embrace the latest technologies and methods in the industry, enabling us to provide innovative solutions.",
-        "sustainability": "Sustainability",
-        "sustainabilityDescription": "We support sustainable development and seek environmentally friendly solutions.",
-        "customerFocus": "Customer Focus",
-        "customerFocusDescription": "We prioritize our clients' needs and strive to provide them with the best service.",
-        "ourLegacy": "Our Legacy",
-        "since": "We have been operating since 2007.",
-        "ourAchievements": "Our Achievements",
-        "experience": "Years Experience",
-        "projects": "Projects Completed",
-        "team": "Team Members",
-        "awards": "Industry Awards",
-        "ourMission": "Our Mission",
-        "ourMissionDescription": "Our mission is to provide the highest quality services in the fields of construction, tourism, and hospitality. We aim to deliver innovative solutions and exceptional service to our clients.",
-        "ourVision": "Our Vision",
-        "ourVisionDescription": "To be the preferred choice in globally recognized sectors for creating sustainable value for all stakeholders through innovation, quality, and meeting customer needs."
+    "infinitytour": {
+      "title": "Infinity Tour",
+      "description": "Creating unforgettable experiences through our travel services, showcasing the best destinations with expert guides and personalized itineraries."
     },
-    "businesses": {
-        "title": "Our Business Sectors",
-        "description": "Mansur Group operates in various sectors, bringing excellence and innovation to each industry.",
-
-        "charvak": {
-            "title": "Travel Advisor",
-            "description": "A comprehensive project that brings together the best resorts in Charvak on one platform."
-        },
-        "infinitytour": {
-            "title": "Infinity Tour",
-            "description": "Creating unforgettable experiences through our travel services, showcasing the best destinations with expert guides and personalized itineraries."
-        },
-        "hospitality": {
-            "title": "UzHA",
-            "description": "A platform that unites hotels, other accommodations, restaurants, and their product and service suppliers."
-        },
-        "finance": {
-            "title": "Shosh Finance Advisor",
-            "description": "An organization engaged in accounting and financial management. Protects against tax and financial risks. Organizes documentation."
-        },
-        "hotelsupply": {
-            "title": "Hotel Supply",
-            "description": "Reliable, fast, and high-quality supply for hotels and restaurants — Hotel Supply is the stable foundation of your business."
-        },
-        "innovativeConstruction": {
-            "title": "Innovatsion Qurilish",
-            "description": "Building the future with innovative construction solutions, from residential buildings to commercial complexes and infrastructure projects."
-        }
+    "hospitality": {
+      "title": "UzHA",
+      "description": "A platform that unites hotels, other accommodations, restaurants, and their product and service suppliers."
     },
-    "contactUs": {
-        "title": "Contact Us",
-        "description": "For detailed information about our services or to discuss your next project, get in touch with us.",
-        "name": "Your Name",
-        "subject": "Subject",
-        "message": "Your Message",
-        "sendMessage": "Send Message",
-        "toContact": "To Contact",
-        "addressTitle": "Address",
-        "address": "34 Bobur Street, Yakkasaray District, Tashkent",
-        "phone": "Phone Number",
-        "workTime": "Working Hours",
-        "workTimeDescription": "Monday - Friday: 9:00 AM - 6:00 PM"
+    "finance": {
+      "title": "Shosh Finance Advisor",
+      "description": "An organization engaged in accounting and financial management. Protects against tax and financial risks. Organizes documentation."
     },
-    "footer": {
-        "quickLinks": "Quick Links",
-        "homePage": "Home Page",
-        "ourBusinesses": "Our Businesses",
-        "construction": "Construction",
-        "tourism": "Tourism",
-        "hospitality": "Hospitality",
-        "finance": "Financial Services",
-        "legal": "Legal",
-        "privacyPolicy": "Privacy Policy",
-        "termsOfUse": "Terms of Use",
-        "cookiePolicy": "Cookie Policy",
-        "allRightsReserved": "All Rights Reserved"
+    "hotelsupply": {
+      "title": "Hotel Supply",
+      "description": "Reliable, fast, and high-quality supply for hotels and restaurants — Hotel Supply is the stable foundation of your business."
+    },
+    "innovativeConstruction": {
+      "title": "Innovatsion Qurilish",
+      "description": "Building the future with innovative construction solutions, from residential buildings to commercial complexes and infrastructure projects."
     }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "description": "For detailed information about our services or to discuss your next project, get in touch with us.",
+    "name": "Your Name",
+    "subject": "Subject",
+    "message": "Your Message",
+    "sendMessage": "Send Message",
+    "toContact": "To Contact",
+    "addressTitle": "Address",
+    "address": "34 Bobur Street, Yakkasaray District, Tashkent",
+    "phone": "Phone Number",
+    "workTime": "Working Hours",
+    "workTimeDescription": "Monday - Friday: 9:00 AM - 6:00 PM"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "homePage": "Home Page",
+    "ourBusinesses": "Our Businesses",
+    "construction": "Construction",
+    "tourism": "Tourism",
+    "hospitality": "Hospitality",
+    "finance": "Financial Services",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "cookiePolicy": "Cookie Policy",
+    "allRightsReserved": "All Rights Reserved"
+  }
 }
