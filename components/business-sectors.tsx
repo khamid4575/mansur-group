@@ -56,7 +56,7 @@ export default function BusinessSectors() {
       title: t("businesses.charvak.title"),
       description: t("businesses.charvak.description"),
       icon: <Mountain className="h-12 w-12 text-amber-500" />,
-      image: "/pyramids.jpg",
+      image: "/pyramids.webp",
       link: "https://charvak.uz",
     },
     {
@@ -72,7 +72,7 @@ export default function BusinessSectors() {
       title: t("businesses.hospitality.title"),
       description: t("businesses.hospitality.description"),
       icon: <Hotel className="h-12 w-12 text-amber-500" />,
-      image: "/ihthotel.jpg",
+      image: "/ihthotel.webp",
       link: "https://uzha.uz",
     },
     {
@@ -96,7 +96,7 @@ export default function BusinessSectors() {
       title: t("businesses.innovativeConstruction.title"),
       description: t("businesses.innovativeConstruction.description"),
       icon: <Building2 className="h-12 w-12 text-amber-500" />,
-      image: "/construction.jpg",
+      image: "/construction.webp",
       link: "#construction",
     },
   ];

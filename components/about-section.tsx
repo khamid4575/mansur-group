@@ -250,7 +250,7 @@ export default function AboutSection() {
               className="relative z-10 rounded-2xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/Farrux Mansurovich.jpg"
+                src="/Farrux Mansurovich.webp"
                 alt="Farrux Mansurovich"
                 width={600}
                 height={800}
