@@ -73,7 +73,7 @@ export default function HeroSection() {
             <Link href={"#sectors"}>
               <Button
                 size="lg"
-                className="w-36 bg-amber-500 hover:bg-amber-600 text-white lg:text-lg"
+                className="w-36 bg-amber-600 hover:bg-amber-700 text-white lg:text-lg"
               >
                 {/* Explore Our Services */}
                 {t("hero.ourServices")}
