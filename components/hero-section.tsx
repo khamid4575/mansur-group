@@ -36,7 +36,7 @@ export default function HeroSection() {
         <Language />
       </motion.div>
 
-      <div className="container relative z-10 mx-auto px-4 text-center">
+      <div className="container relative z-10 mx-auto px-4 text-center md:text-start">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function HeroSection() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-gray-200"
+            className="text-xl md:text-2xl max-w-3xl mx-auto md:mx-0 mb-8 text-gray-200"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -68,7 +68,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
             <Link href={"#sectors"}>
               <Button
