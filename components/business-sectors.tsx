@@ -89,7 +89,7 @@ export default function BusinessSectors() {
       description: t("businesses.hotelsupply.description"),
       icon: <Handshake className="h-12 w-12 text-amber-500" />,
       image: "/supply.webp",
-      link: "https://supplypartners.uz/",
+      link: "https://v0-modern-landing-page-ruby-ten.vercel.app/",
     },
     {
       id: "innovatsion-qurilish",
