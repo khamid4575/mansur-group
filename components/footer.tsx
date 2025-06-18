@@ -16,12 +16,12 @@ export default function Footer() {
           <div className="md:col-span-1">
             <h3 className="text-xl font-bold mb-4">Mansur Group</h3>
             <p className="text-gray-400 mb-4">
-              {/* Excellence in Construction, Tourism, and Hospitality */}
               {t("hero.description")}
-              </p>
+            </p>
             <div className="flex space-x-4">
               <motion.a
                 href="#"
+                aria-label="Facebook"
                 whileHover={{ y: -3, color: "#4267B2" }}
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -29,6 +29,7 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 href="#"
+                aria-label="Twitter"
                 whileHover={{ y: -3, color: "#1DA1F2" }}
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -36,6 +37,7 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 href="#"
+                aria-label="Instagram"
                 whileHover={{ y: -3, color: "#E1306C" }}
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -43,6 +45,7 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 href="#"
+                aria-label="LinkedIn"
                 whileHover={{ y: -3, color: "#0077B5" }}
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -53,31 +56,26 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">
-              {/* Quick Links */}
               {t("footer.quickLinks")}
-              </h4>
+            </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Home */}
                   {t("footer.homePage")}
                 </Link>
               </li>
               <li>
                 <Link href="#about" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* About Us */}
                   {t("about.title")}
                 </Link>
               </li>
               <li>
                 <Link href="#sectors" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Our Sectors */}
                   {t("footer.ourBusinesses")}
                 </Link>
               </li>
               <li>
                 <Link href="#contact" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Contact */}
                   {t("contactUs.title")}
                 </Link>
               </li>
@@ -86,31 +84,26 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">
-              {/* Our Businesses */}
               {t("footer.ourBusinesses")}
             </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#construction" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Construction */}
                   {t("footer.construction")}
                 </Link>
               </li>
               <li>
                 <Link href="#tourism" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Tourism */}
                   {t("footer.tourism")}
                 </Link>
               </li>
               <li>
                 <Link href="#hospitality" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Hotels & Hospitality */}
                   {t("footer.hospitality")}
                 </Link>
               </li>
               <li>
                 <Link href="#finance" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Finance */}
                   {t("footer.finance")}
                 </Link>
               </li>
@@ -119,25 +112,21 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">
-              {/* Legal */}
               {t("footer.legal")}
             </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Privacy Policy */}
                   {t("footer.privacyPolicy")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Terms of Service */}
                   {t("footer.termsOfUse")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
-                  {/* Cookie Policy */}
                   {t("footer.cookiePolicy")}
                 </Link>
               </li>
@@ -152,18 +141,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-    // "footer": {
-    //     "quickLinks": "Tezkor havolalar",
-    //     "homePage": "Bosh sahifa",
-    //     "ourBusinesses": "Bizneslarimiz",
-    //     "construction": "Qurilish",
-    //     "tourism": "Turizm",
-    //     "hospitality": "Mehmondo'stlik",
-    //     "finance": "Moliyaviy xizmatlar",
-    //     "legal": "Huquqiy",
-    //     "privacyPolicy": "Maxfiylik siyosati",
-    //     "termsOfUse": "Foydalanish shartlari",
-    //     "cookiePolicy": "Cookie siyosati",
-    //     "allRightsReserved": "Barcha huquqlar himoyalangan"
-    // }
