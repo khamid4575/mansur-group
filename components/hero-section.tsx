@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
           // src="/placeholder.svg?height=1080&width=1920"
-          src="/6.webp"
+          src="/2.webp"
           alt="Mansur Group Hero Background"
           fill
           className="object-cover object-center"
