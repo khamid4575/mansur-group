@@ -250,8 +250,8 @@ export default function AboutSection() {
               className="relative z-10 rounded-2xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/Farrux Mansurovich.webp"
-                alt="Farrux Mansurovich"
+                src="/Xusan Tuxtaev.webp"
+                alt="Xusan Tuxtaev"
                 width={600}
                 height={800}
                 className="w-full max-h-[800px] object-cover rounded-2xl"
