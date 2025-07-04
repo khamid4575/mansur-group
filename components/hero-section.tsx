@@ -7,23 +7,55 @@ import { Button } from "@/components/ui/button";
 import Language from "@/components/language";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+const images = [
+  "/2.webp",
+  "/1.webp",
+  "/3.webp",
+  "/4.webp",
+  "/5.webp",
+  "/6.webp",
+  "/7.webp",
+  "/8.webp",
+  "/9.webp",
+  "/10.webp",
+  "/11.webp",
+  "/12.webp",
+];
 
 export default function HeroSection() {
   const t = useTranslations();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Har 4 soniyada rasmni almashish uchun interval
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval); // Komponent o'chirilganda intervalni tozalash
+  }, []);
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-slate-900 to-slate-800 text-white">
+      {/* Rasmlar va qoplama uchun konteyner */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/50 z-10" />
-        <Image
-          // src="/placeholder.svg?height=1080&width=1920"
-          src="/2.webp"
-          alt="Mansur Group Hero Background"
-          fill
-          className="object-cover object-center"
-          priority
-        />
+        {images.map((src, index) => (
+          <Image
+            key={src}
+            src={src}
+            alt="Mansur Group Hero Background"
+            fill
+            className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+            priority={index === 0} // Birinchi rasm uchun tez yuklash
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/50 z-10" /> {/* Qora qoplama */}
       </div>
 
+      {/* Til tanlash komponenti */}
       <motion.div
         className="absolute top-8 right-8 z-20"
         initial={{ opacity: 0, y: 10 }}
@@ -36,6 +68,7 @@ export default function HeroSection() {
         <Language />
       </motion.div>
 
+      {/* Matn va tugmalar */}
       <div className="container relative z-10 mx-auto px-4 text-center md:text-start">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +93,6 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {/* Excellence in Construction, Tourism, and Hospitality */}
             {t("hero.description")}
           </motion.p>
 
@@ -75,7 +107,6 @@ export default function HeroSection() {
                 size="lg"
                 className="w-36 bg-amber-500 hover:bg-amber-600 text-white lg:text-lg"
               >
-                {/* Explore Our Services */}
                 {t("hero.ourServices")}
               </Button>
             </Link>
@@ -83,9 +114,8 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-36 border-white text-gray-600 hover:text-white hover:bg-white/10 lg:text-lg"
+                className="w-36 border-white text-white hover:text-gray-600 bg-transparent lg:text-lg"
               >
-                {/* Contact Us */}
                 {t("hero.contactUs")}
               </Button>
             </Link>
@@ -93,8 +123,9 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
+      {/* Pastga yo‘naltiruvchi o‘q */}
       <motion.div
-        className="absolute bottom-8 "
+        className="absolute bottom-8"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
