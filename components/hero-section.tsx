@@ -20,8 +20,6 @@ const images = [
   "/8.webp",
   "/9.webp",
   "/10.webp",
-  "/11.webp",
-  "/12.webp",
 ];
 
 export default function HeroSection() {
