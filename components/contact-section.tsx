@@ -131,7 +131,7 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-medium">{t("contactUs.phone")}</h4>
                       <p className="text-gray-600 mt-1">+998 (90) 176 62 50</p>
-                      <p className="text-gray-600">+998 (95) 177 92 52</p>
+                      <p className="text-gray-600">+998 (95) 177 62 50</p>
                     </div>
                   </div>
 
@@ -145,7 +145,7 @@ export default function ContactSection() {
                   </div>
                 </div>
 
-                <div className="pt-4">
+                <div className="">
                   <h4 className="font-medium mb-3">
                     {/* Business Hours */}
                     {t("contactUs.workTime")}
